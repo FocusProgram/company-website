@@ -2,35 +2,34 @@
   <div class="home">
     <div class="reason">
       <div class="top">
-        <div class="line line-l"></div>选择汉兴科技的理由
+        <div class="line line-l"></div>汉兴科技
         <div class="line line-r"></div>
       </div>
-      <div class="intro">在阳山智谷商学院，从一个全新的学术视角来重新审视一切。在这，学习不是始于灌输知识，而是提出一个问题，
-        <br>一个你自己所关心的问题，一个你的企业面临需要解决的问题。你的学习将围绕着这一问题，为了解决它，
-        <br>你需要去钻研相关管理知识，衡量各种可选方法，然后提出最佳的解决方案
+      <div class="intro">
+        汉兴科技于2016年成立，是中国光学检测行业排名前列的研发商和制造商
       </div>
       <div class="icons clearfix">
         <div class="part fl">
           <div class="part-top">
-            <img src="@/assets/icon1.png" alt="互联网研究中心">
+            <img src="@/assets/icon2.png" alt="自主研发生产">
           </div>
-          <div class="part-title">互联网研究中心</div>
+          <div class="part-title">自主研发生产</div>
         </div>
         <div class="part fl">
           <div class="part-top second">
-            <img src="@/assets/icon2.png" alt="金融研究中心">
+            <img src="@/assets/icon1.png" alt="全球化销售">
           </div>
-          <div class="part-title">金融研究中心</div>
+          <div class="part-title">全球化销售</div>
         </div>
         <div class="part fl">
           <div class="part-top third">
-            <img src="@/assets/icon3.png" alt="管理研究中心">
+            <img src="@/assets/icon3.png" alt="售前售后服务">
           </div>
-          <div class="part-title">管理研究中心</div>
+          <div class="part-title">售前售后服务</div>
         </div>
       </div>
     </div>
-    <div class="review">
+    <!-- <div class="review">
       <div class="w">
         <div class="header">
           <span class="fl">课程回顾</span>
@@ -54,31 +53,31 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="teachers">
       <div class="w">
         <div class="header">
-          <span class="fl">阳山师资</span>
+          <span class="fl">产品展示</span>
           <router-link to="professors" class="fr">more ></router-link>
         </div>
       </div>
       <div class="teachers-lists">
         <el-carousel indicator-position="outside" height="510px" :interval="5000" trigger="click">
-          <el-carousel-item v-for="(item, index) in teachersLists" :key="index">
+          <el-carousel-item v-for="(item, index) in productLists" :key="index">
             <div class="teachers-list clearfix">
               <a
                 class="item fl"
                 v-for="(c_item, c_index) in item"
                 :key="c_index"
                 href="javascript:;"
-                @click="toProfessorsDetail(index)"
+                @click="toProfessorsDetail(c_item)"
               >
                 <div class="avator">
                   <img :src="c_item.avator" alt>
                 </div>
                 <div class="intro">
                   <div class="name">{{ c_item.name }}</div>
-                  <div class="brief" v-html="c_item.brief"></div>
+                  <div class="brief" v-html="c_item.brief" style="line-height:30px"></div>
                 </div>
               </a>
             </div>
@@ -163,89 +162,33 @@ export default {
           time: '2018-04-04'
         }
       ],
-      teachersArr: [
+      productArr: [
         {
-          avator: './static/images/3.png',
-          name: '1房西苑 教授',
-          brief: '北清智库首席资本导师<br>北京大学中国国情研究中心  研究员<br>美国项目管理协会会员'
+          avator: './static/images/product/AOI-1.png',
+          name: 'A6离线AOI设备',
+          brief: 'HX-A6是专为国内许多小批量、多机种的制造厂商开发的离线式AOI。进口的丝杆导轨实现最高的精度，3CCD彩色相机准确识别各部件的颜色变化，完全01005的检测能力，符合CE标准和人性化的机械设计，超大抽拉式操作托盘，可供操作人员置放PCB等物品，位于中间的LCD显示器可保护操作人员视力，集中的电路系统打开外罩便一目了然，方便维护保养，自动张开的双边夹具大大提高了使用效果。',
+          introduceUrl: './static/images/product/AOI-1-introduce-1.png,./static/images/product/AOI-1-introduce-2.png,./static/images/product/AOI-1-introduce-3.png'
         },
         {
-          avator: './static/images/4.png',
-          name: '1张伟 教授',
-          brief: '北清智库研究院首席金融学家<br>金融EMBA项目首席责任导师<br>北京大学金融与产业发展研究中心研究员'
+          avator: './static/images/product/AOI-2.png',
+          name: 'A8在线AOI设备',
+          brief: '随着对产品质量的要求及人工成本的不断提升，越来越多的制造商期望全自动化的制程，以此来提高效率，降低人工成本。汉兴科技研制的A8就是为了实现广大制造商这一理想，其配备多重软件分析算法，多种应用模式和各项高实用的辅助功能，除此之外，还配备高精度的运动系统。图像采集系统，使其检测速度更快，检出率更高，更稳定，以及在操作方面更为便捷。',
+          introduceUrl: './static/images/product/AOI-2-introduce-1.png,./static/images/product/AOI-2-introduce-2.png,./static/images/product/AOI-2-introduce-3.png,./static/images/product/AOI-2-introduce-4.png'
         },
         {
-          avator: './static/images/5.png',
-          name: '1金占明 教授',
-          brief: '北清智库战略课程导师<br>清华大学经济管理学院教授'
+          avator: './static/images/product/AOI-3.png',
+          name: 'A680深度学习型',
+          brief: 'HX-A680为汉兴科技公司离线系列AOI产品，一般放置在SMT生产线的旁边，与在线AOI是不同类的产品，在线AOI可以放在生产线上，与生产线动作频率一致。属于SMT生产线其中的一个环节，而多数离线AOI放在回流焊的后面，属于半自动检测设备，需要人手参与取放板操作。在线AOI可以直接检测，不需要人手协助，属于全自动检测设备。',
+          introduceUrl: './static/images/product/AOI-3-introduce-1.png,./static/images/product/AOI-3-introduce-2.png,./static/images/product/AOI-3-introduce-3.png'
         },
         {
-          avator: './static/images/6.png',
-          name: '1欧阳良宜 博士',
-          brief: '北清智库商学院金融主讲教授<br>北京大学汇丰商学院助理院长<br>EMBA项目主任'
-        },
-        {
-          avator: './static/images/3.png',
-          name: '2房西苑 教授',
-          brief: '北清智库首席资本导师<br>北京大学中国国情研究中心  研究员<br>美国项目管理协会会员'
-        },
-        {
-          avator: './static/images/4.png',
-          name: '2张伟 教授',
-          brief: '北清智库研究院首席金融学家<br>金融EMBA项目首席责任导师<br>北京大学金融与产业发展研究中心研究员'
-        },
-        {
-          avator: './static/images/5.png',
-          name: '2金占明 教授',
-          brief: '北清智库战略课程导师<br>清华大学经济管理学院教授'
-        },
-        {
-          avator: './static/images/6.png',
-          name: '2欧阳良宜 博士',
-          brief: '北清智库商学院金融主讲教授<br>北京大学汇丰商学院助理院长<br>EMBA项目主任'
-        },
-        {
-          avator: './static/images/3.png',
-          name: '3房西苑 教授',
-          brief: '北清智库首席资本导师<br>北京大学中国国情研究中心  研究员<br>美国项目管理协会会员'
-        },
-        {
-          avator: './static/images/4.png',
-          name: '3张伟 教授',
-          brief: '北清智库研究院首席金融学家<br>金融EMBA项目首席责任导师<br>北京大学金融与产业发展研究中心研究员'
-        },
-        {
-          avator: './static/images/5.png',
-          name: '3金占明 教授',
-          brief: '北清智库战略课程导师<br>清华大学经济管理学院教授'
-        },
-        {
-          avator: './static/images/6.png',
-          name: '3欧阳良宜 博士',
-          brief: '北清智库商学院金融主讲教授<br>北京大学汇丰商学院助理院长<br>EMBA项目主任'
-        },
-        {
-          avator: './static/images/3.png',
-          name: '4房西苑 教授',
-          brief: '北清智库首席资本导师<br>北京大学中国国情研究中心  研究员<br>美国项目管理协会会员'
-        },
-        {
-          avator: './static/images/4.png',
-          name: '4张伟 教授',
-          brief: '北清智库研究院首席金融学家<br>金融EMBA项目首席责任导师<br>北京大学金融与产业发展研究中心研究员'
-        },
-        {
-          avator: './static/images/5.png',
-          name: '4金占明 教授',
-          brief: '北清智库战略课程导师<br>清华大学经济管理学院教授'
-        },
-        {
-          avator: './static/images/6.png',
-          name: '4欧阳良宜 博士',
-          brief: '北清智库商学院金融主讲教授<br>北京大学汇丰商学院助理院长<br>EMBA项目主任'
+          avator: './static/images/product/AOI-4.png',
+          name: 'A6T全自动离线混合贴装光学检测设备',
+          brief: 'HX-A6T是一款引导新领域多功能检测创新AOI，它配备独特的图像采集技术及光源系统，可检测通孔和混合贴装技术电路板，是具有色环电阻波峰焊后、SMT回流后、元件面等工艺需求的最佳选择。',
+          introduceUrl: './static/images/product/AOI-4-introduce-1.png,./static/images/product/AOI-4-introduce-2.png,./static/images/product/AOI-4-introduce-3.png'
         }
       ],
-      teachersLists: [],
+      productLists: [],
       getNewsStatus: true
     }
   },
@@ -259,7 +202,7 @@ export default {
   },
   methods: {
     computedTeacher () {
-      this.teachersLists = this.common.getNumArr(this.teachersArr, 4)
+      this.productLists = this.common.getNumArr(this.productArr, 4)
     },
     loadmore () {
       console.log('加载更多')
@@ -268,10 +211,12 @@ export default {
         this.getNewsStatus = true
       }, 2000)
     },
-    toProfessorsDetail (index) {
+    toProfessorsDetail (product) {
       this.$router.push({
         path: 'professorsdetail',
-        query: { professorId: index }
+        query: {
+          product: product
+        }
       })
     },
     toNewsDetail (index) {
