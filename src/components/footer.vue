@@ -7,11 +7,11 @@
         </div>
         <div class="msg">
           <p style="line-height:30px">
-            地址：山东省 济南市 汉兴科技
+            地址：山东省济南市槐荫区兴福寺南路与滨州路交叉路口往西北约100米(恒大翡翠华庭3期南侧约150米)
             <br>
             电话：153-3530-0606 邮箱：153-3530-0606@163.com
             <br>
-            版权所有：<a href="http://www.beian.miit.gov.cn" target="_blank">苏ICP备19063834号-1</a>
+            版权所有：Copyright@2020 济南汉兴自动化科技有限公司 | <a href="http://www.beian.miit.gov.cn" target="_blank">苏ICP备19063834号-1</a>
           </p>
         </div>
       </div>
@@ -31,20 +31,20 @@ export default {
           link: '/'
         },
         {
-          title: '服务',
-          link: 'News'
+          title: '产品列表',
+          link: 'professors'
         },
         {
-          title: '案例',
-          link: 'Teaching'
+          title: '产品案例',
+          link: 'productcase'
         },
         {
           title: '关于我们',
-          link: 'Professors'
+          link: 'introduction'
         },
         {
           title: '联系我们',
-          link: 'Customization'
+          link: 'contact'
         }
       ]
     }

@@ -31,12 +31,12 @@ export default {
           link: '/'
         },
         {
-          title: '服务',
-          link: 'news'
+          title: '产品列表',
+          link: 'professors'
         },
         {
-          title: '案例',
-          link: 'teaching'
+          title: '产品案例',
+          link: 'productcase'
         },
         {
           title: '关于我们',
@@ -63,9 +63,13 @@ export default {
         }
       })
     }
+  },
+  created: function() {
+     this.$emit('banner', false)
   }
 }
 </script>
+
 <style lang="scss" scoped>
 .header {
   position: relative;

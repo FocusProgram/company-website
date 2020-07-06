@@ -49,7 +49,6 @@ export default {
   },
   created () {
     this.$emit('banner', false)
-    console.log(this.introduceUrlLists)
   }
 }
 </script>

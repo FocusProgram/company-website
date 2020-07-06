@@ -18,7 +18,7 @@
 export default {
   data () {
     return {
-      bannerLists: ['./static/images/banner-5.png', './static/images/banner-6.png', './static/images/banner-7.png'],
+      bannerLists: ['./static/images/banner/banner-5.png', './static/images/banner/banner-6.png', './static/images/banner/banner-7.png'],
       indicatorStatus: 'inside'
     }
   },

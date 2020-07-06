@@ -2,14 +2,11 @@ import Vue from 'vue'
 import Router from 'vue-router'
 const Home = () => import('@/page/home')
 const Introduction = () => import('@/page/introduction')
-const News = () => import('@/page/news')
-const NewsDetail = () => import('@/page/newsdetail')
-const Teaching = () => import('@/page/teaching')
+const ProductCase = () => import('@/page/productcase')
+const ProductCaseDeatil = () => import('@/page/productcasedetail')
 const Professors = () => import('@/page/professors')
 const ProfessorsDetail = () => import('@/page/professorsdetail')
-const Customization = () => import('@/page/customization')
 const Contact = () => import('@/page/contact')
-const Test = () => import('@/page/test')
 
 Vue.use(Router)
 
@@ -30,19 +27,14 @@ export default new Router({
       component: Introduction
     },
     {
-      path: '/news',
-      name: 'news',
-      component: News
+      path: '/productcase',
+      name: 'productcase',
+      component: ProductCase
     },
     {
-      path: '/newsdetail',
-      name: 'newsdetail',
-      component: NewsDetail
-    },
-    {
-      path: '/teaching',
-      name: 'teaching',
-      component: Teaching
+      path: '/productcasedetail',
+      name: 'productcasedetail',
+      component: ProductCaseDeatil
     },
     {
       path: '/professors',
@@ -55,19 +47,9 @@ export default new Router({
       component: ProfessorsDetail
     },
     {
-      path: '/customization',
-      name: 'customization',
-      component: Customization
-    },
-    {
       path: '/contact',
       name: 'contact',
       component: Contact
-    },
-    {
-      path: '/test',
-      name: 'test',
-      component: Test
     }
   ]
 })

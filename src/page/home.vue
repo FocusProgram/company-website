@@ -29,42 +29,18 @@
         </div>
       </div>
     </div>
-    <!-- <div class="review">
-      <div class="w">
-        <div class="header">
-          <span class="fl">课程回顾</span>
-          <router-link to="teaching" class="fr">more ></router-link>
-        </div>
-        <div class="lists clearfix">
-          <div class="list fl" v-for="(item, index) in reviewArr" :key="index">
-            <div class="list-poster">
-              <a href="#">
-                <img :src="item.poster" alt>
-                <div class="list-brief">{{ item.brief }}</div>
-              </a>
-            </div>
-            <div class="list-msg">
-              <div class="list-title ellipsis">{{ item.title }}</div>
-              <div class="list-info clearfix">
-                <span class="fl">{{ item.time }}</span>
-                <a class="fr" href="#">查看详情</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <div class="teachers">
+
+    <div class="product">
       <div class="w">
         <div class="header">
           <span class="fl">产品展示</span>
-          <router-link to="professors" class="fr">more ></router-link>
+          <router-link to="professors" class="fr">更多 ></router-link>
         </div>
       </div>
-      <div class="teachers-lists">
+      <div class="product-lists">
         <el-carousel indicator-position="outside" height="510px" :interval="5000" trigger="click">
           <el-carousel-item v-for="(item, index) in productLists" :key="index">
-            <div class="teachers-list clearfix">
+            <div class="product-list clearfix">
               <a
                 class="item fl"
                 v-for="(c_item, c_index) in item"
@@ -85,7 +61,48 @@
         </el-carousel>
       </div>
     </div>
-    <div class="news">
+
+     <div class="product">
+      <div class="w">
+        <div class="header">
+          <span class="fl">荣誉专利</span>
+          <!-- <router-link to="professors" class="fr">more ></router-link> -->
+        </div>
+      </div>
+      <div class="product-lists">
+        <el-carousel indicator-position="outside" height="510px" :interval="5000" trigger="click">
+          <el-carousel-item v-for="(patent, index) in patentLists" :key="index">
+            <div class="product-list clearfix">
+              <a class="item fl" v-for="(p_patent, p_index) in patent" :key="p_index" style="width:270px;display:flex;justify-content:center;align-items: center;">
+                <img :src="p_patent.imgUrl" alt="" style="height:410px;width:300px">
+              </a>
+            </div>
+          </el-carousel-item>
+        </el-carousel>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="w">
+        <div class="header">
+          <span class="fl">合作伙伴</span>
+          <!-- <router-link to="professors" class="fr">more ></router-link> -->
+        </div>
+      </div>
+      <div class="product-lists">
+        <el-carousel indicator-position="outside" height="210px" :interval="5000" trigger="click">
+          <el-carousel-item v-for="(partner, index) in partnerLists" :key="index">
+            <div class="product-list clearfix">
+              <a class="item fl" v-for="(p_partner, p_index) in partner" :key="p_index" style="display:flex;justify-content:center;align-items: center;height:210px">
+                <img :src="p_partner.imgUrl" alt="" style="height:120px;width:230px">
+              </a>
+            </div>
+          </el-carousel-item>
+        </el-carousel>
+      </div>
+    </div>
+
+    <!-- <div class="news">
       <div class="w">
         <div class="header">
           <span class="fl">阳山智谷新闻</span>
@@ -115,7 +132,7 @@
           </span>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
@@ -123,45 +140,53 @@ import api from '@/api/api'
 export default {
   data () {
     return {
-      listsArr: [],
-      reviewArr: [
+      patentArr: [
         {
-          poster: './static/images/1.png',
-          title: '4月14-15日互联网EMBA总裁研修班课程课程',
-          brief: '北清智库商学院互联网导师喻旭老师为同学们带来了«新零售创新战略与路径设计»，从产业的高度，用户的角…',
-          time: '2018-04-04'
+          imgUrl: './static/images/patent/patent-1.png'
         },
         {
-          poster: './static/images/2.png',
-          title: '阳山智谷EMBA总裁高级研修班 M38班课课程',
-          brief: '北清智库商学院互联网导师喻旭老师为同学们带来了',
-          time: '2018-04-04'
+          imgUrl: './static/images/patent/patent-2.png'
         },
         {
-          poster: './static/images/1.png',
-          title: '阳山智谷【金融EMBA】三月课程纪实',
-          brief: '北清智库商学院互联网导师喻旭老师为同学们带来了«新零售创新战略与路径设计»，从产业的高度，用户的角…',
-          time: '2018-04-04'
+          imgUrl: './static/images/patent/patent-3.png'
         },
         {
-          poster: './static/images/2.png',
-          title: '阳山智谷EMBA总裁高级研修班 M38班课课程',
-          brief: '北清智库商学院互联网导师喻旭老师为同学们带来了«新零售创新战略与路径设计»，从产业的高度，用户的角…',
-          time: '2018-04-04'
+          imgUrl: './static/images/patent/patent-4.png'
         },
         {
-          poster: './static/images/1.png',
-          title: '阳山智谷【金融EMBA】三月课程纪实',
-          brief: '北清智库商学院互联网导师喻旭老师为同学们带来了«新零售创新战略与路径设计»，从产业的高度，用户的角…',
-          time: '2018-04-04'
+          imgUrl: './static/images/patent/patent-5.png'
         },
         {
-          poster: './static/images/2.png',
-          title: '阳山智谷EMBA总裁高级研修班 M38班课课程',
-          brief: '北清智库商学院互联网导师喻旭老师为同学们带来了«新零售创新战略与路径设计»，从产业的高度，用户的角…',
-          time: '2018-04-04'
+          imgUrl: './static/images/patent/patent-6.png'
         }
       ],
+      partnerArr: [
+        {
+          imgUrl: './static/images/partner/partner-1.png'
+        },
+        {
+          imgUrl: './static/images/partner/partner-2.png'
+        },
+        {
+          imgUrl: './static/images/partner/partner-3.png'
+        },
+        {
+          imgUrl: './static/images/partner/partner-4.png'
+        },
+        {
+          imgUrl: './static/images/partner/partner-5.png'
+        },
+        {
+          imgUrl: './static/images/partner/partner-6.png'
+        },
+        {
+          imgUrl: './static/images/partner/partner-7.png'
+        },
+        {
+          imgUrl: './static/images/partner/partner-8.png'
+        }
+      ],
+      listsArr: [],
       productArr: [
         {
           avator: './static/images/product/AOI-1.png',
@@ -189,11 +214,15 @@ export default {
         }
       ],
       productLists: [],
+      partnerLists: [],
+      patentLists: [],
       getNewsStatus: true
     }
   },
   created () {
-    this.computedTeacher()
+    this.computedProduct()
+    this.computedPartner()
+    this.computerPatent()
     this.getNewsLists()
     this.$emit('banner', true)
   },
@@ -201,8 +230,14 @@ export default {
 
   },
   methods: {
-    computedTeacher () {
+    computedProduct () {
       this.productLists = this.common.getNumArr(this.productArr, 4)
+    },
+    computedPartner() {
+      this.partnerLists = this.common.getNumArr(this.partnerArr, 4)
+    },
+    computerPatent() {
+      this.patentLists = this.common.getNumArr(this.patentArr, 4)
     },
     loadmore () {
       console.log('加载更多')
@@ -235,6 +270,7 @@ export default {
   }
 }
 </script>
+
 <style>
 .home .el-carousel__button {
   opacity: 1;
@@ -329,7 +365,7 @@ export default {
     font-weight: bold;
     margin-bottom: 40px;
     .fl {
-      font-size: 36px;
+      font-size: 25px;
       color: #555555;
     }
     .fr {
@@ -408,13 +444,13 @@ export default {
       }
     }
   }
-  .teachers {
+  .product {
     padding-top: 20px;
     padding-bottom: 40px;
-    .teachers-lists {
+    .product-lists {
       width: 1348px;
       margin: 0 auto;
-      .teachers-list {
+      .product-list {
         padding: 0 90px;
         .item {
           display: block;
@@ -468,10 +504,10 @@ export default {
 }
 @media screen and (max-width: 1348px) {
   .home {
-    .teachers {
-      .teachers-lists {
+    .product {
+      .product-lists {
         width: 1200px;
-        .teachers-list {
+        .product-list {
           padding: 0 16px;
         }
       }

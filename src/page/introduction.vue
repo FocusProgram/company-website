@@ -2,11 +2,6 @@
   <div class="introduction common-box">
     <div class="w">
       <div class="title">公司简介</div>
-      <!-- <div class="menu">
-        <span v-for="(item, index) in menuLists" :key="index">
-          <a href="javascript:;" @click="getContent(index)" :class="{'active': activeIndex === index}">{{ item }}</a>
-        </span>
-      </div> -->
       <div><img src="static/images/banner-1.jpg" style="width:900px;margin-left:50px"></div>
       <div class="content" v-loading="loading" v-html="content" style="line-height:30px"></div>
     </div>
@@ -17,7 +12,7 @@ import api from '@/api/api'
 export default {
   data () {
     return {
-      menuLists: ['走进阳山智谷', '院长寄语', '发展历程', '机构设置', '院务会', '战略委员会'],
+      menuLists: [],
       activeIndex: 0,
       content: '',
       loading: true

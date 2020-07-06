@@ -11,14 +11,14 @@
             <!--点-->
             <bm-marker :position="map.center" :dragging="map.dragging" animation="BMAP_ANIMATION_DROP">
                 <!--提示信息-->
-                <bm-info-window :show="map.show">汉兴科技<br/><br/>广东省 深圳市 宝安区 西乡</bm-info-window>
+                <bm-info-window :show="map.show">恒大翡翠华庭<br/><br/>山东省济南市槐荫区兴福寺南路与滨州路交叉路口往西北约100米(恒大翡翠华庭3期南侧约150米)</bm-info-window>
             </bm-marker>
         </baidu-map>
       <img src="" alt="">
       </div>
       <div class="detail">
-        <span><i>公司地址：</i>山东省 济南市 </span>
-        <span class="active"><i>咨询电话：</i>153-3530-0606</span>
+        <span><i>公司地址：</i>山东省济南市槐荫区兴福寺南路与滨州路交叉路口往西北约100米(恒大翡翠华庭3期南侧约150米)</span><br><br>
+        <span><i>咨询电话：</i>153-3530-0606</span><br><br>
         <span><i>邮箱地址：</i>153-3530-0606@163.com</span>
       </div>
       <div class="codes clearfix">
@@ -91,7 +91,7 @@ export default {
   },
   data: () => ({
     map: {
-        center: {lng: 113.869162, lat: 22.581635},
+        center: {lng: 116.936679, lat: 36.679809},
         zoom: 15,
         show: true,
         dragging: true
