@@ -1,9 +1,9 @@
 <template>
   <div class="header">
     <div class="top">
-      <div class="logo fl">
+      <div class="logo fl" style="text-align:center;display:flex;justify-content:center;align-items:center;height:70px">
         <router-link to="/">
-          <img src="@/assets/hanxing-logo.png" alt="汉兴科技" link="/">
+          <img src="@/assets/hanxing-logo.png" alt="汉兴科技" link="/" style="height:30px">
         </router-link>
       </div>
       <div class="tel fr" style="color:#00458e;font-weight:bolder"><img src="@/assets/phone.png" style="margin-top:-5px">&nbsp;咨询热线：153-3530-0606</div>
@@ -16,6 +16,7 @@
           :key="index"
           :class="{'active': activeIndex === index}"
           @click.native="changeIndex(index)"
+          style="font-weight:bolder"
         >{{ item.title }}</router-link>
       </div>
     </div>
@@ -77,7 +78,7 @@ export default {
   .top {
     height: 70px;
     background-color: #133b28;
-    background: url("../assets/Group.png");
+    // background: url("../assets/Group.png");
     padding: 0 70px;
     color: #fff;
     position: relative;
@@ -97,7 +98,7 @@ export default {
   }
   .menu {
     height: 50px;
-    background-color: #fff;
+    // background-color: #fff;
     box-shadow: 0 4px 4px 0 rgba(19, 59, 40, 0.25);
     text-align: center;
     .center {
