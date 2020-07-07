@@ -27,6 +27,8 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     "space-before-function-paren": 0,
     // 关闭缩进检查
-    'indent': 'off'
+    'indent': 'off',
+    'no-unused-vars': 'off',
+    'useEslint': false
   }
 }

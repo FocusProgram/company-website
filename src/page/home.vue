@@ -101,42 +101,36 @@
         </el-carousel>
       </div>
     </div>
-
-    <!-- <div class="news">
-      <div class="w">
-        <div class="header">
-          <span class="fl">阳山智谷新闻</span>
-          <router-link to="news" class="fr">more ></router-link>
-        </div>
-        <div class="lists clearfix">
-          <div class="list fl" v-for="(item, index) in listsArr" :key="index">
-            <div class="list-poster">
-              <a href="javascript:;" @click="toNewsDetail(item.id)">
-                <img :src="item.poster" alt>
-                <div class="list-brief">{{ item.brief }}</div>
-              </a>
-            </div>
-            <div class="list-msg">
-              <div class="list-title ellipsis">{{ item.title }}</div>
-              <div class="list-info clearfix">
-                <span class="fl">{{ item.time }}</span>
-                <a class="fr" href="javascript:;" @click="toNewsDetail(item.id)">查看详情</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="loadmore" @click="loadmore">
-          <span v-if="getNewsStatus">加载更多</span>
-          <span v-else>
-            <i class="el-icon-loading"></i> 加载中...
-          </span>
-        </div>
-      </div>
-    </div> -->
+  
+    <!--右侧悬浮菜单-->
+    <div class="slide">
+      <ul class="icon">
+        <li class="up" title="上一页"></li>
+        <li class="qq"></li>
+        <li class="tel"></li>
+        <li class="wx"></li>
+        <li class="down" title="下一页"></li>
+      </ul>
+      <ul class="info">
+        <li class="qq">
+          <p>在线沟通，请点我<a href="http://wpa.qq.com/msgrd?v=3&uin=1031652818&site=qq&menu=yes" target="_blank">在线咨询</a></p>
+        </li>
+        <li class="tel">
+          <p>咨询热线：<br>153-3530-0606<br>客服QQ：<br>1031652818</p>
+        </li>
+        <li class="wx">
+          <div class="img"><img src="../assets/wechat.png" /></div>
+        </li>
+      </ul>
+    </div>
+    <div id="btn" class="index_cy"></div>
   </div>
 </template>
+
 <script>
 import api from '@/api/api'
+import $query from '../flot/jquery.min.js'
+import $load from '../flot/load.js'
 export default {
   data () {
     return {
@@ -513,5 +507,115 @@ export default {
       }
     }
   }
+}
+/**悬浮窗样式 */
+.slide{
+  width: 50px;
+  height: 250px;
+  position: fixed;
+  top: 50%;
+  margin-top: -126px;
+  background: #133b28;
+  right: 0;
+  border-radius: 5px 0 0 5px;
+  z-index: 999;
+}
+.slide ul{
+  list-style: none;
+}
+.slide .icon li{
+  width: 49px;
+  height: 50px;
+  background: url('../flot/image/icon.png') no-repeat;
+}
+.slide .icon .up{
+  background-position:-330px -120px ;
+}
+.slide .icon li.qq{
+  background-position:-385px -73px ;
+}
+.slide .icon li.tel{
+  background-position:-385px -160px ;
+}
+.slide .icon li.wx{
+  background-position:-385px -120px ;
+}
+.slide .icon li.down{
+  background-position:-330px -160px ;
+}
+.slide .info{
+  top: 50%;
+  height: 147px;
+  position: absolute;
+  right: 100%;
+  background: #018D75;
+  width: 0px;
+  overflow: hidden;
+  margin-top: -73.5px;
+  transition:0.5s;
+  border-radius:4px 0 0 4px ;
+}
+.slide .info.hover{
+  width: 145px;
+}
+.slide .info li{
+  width: 145px;
+  color: #CCCCCC;
+  text-align: center;
+}
+.slide .info li p{
+  font-size: 1.1em;
+  line-height: 2em;
+  padding: 15px;
+  text-align: left;
+}
+.slide .info li.qq p a{
+  display: block;
+  margin-top: 12px;
+  width: 100px;
+  height: 32px;
+  line-height: 32px;
+  color: #00DFB9;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #00DFB9;
+  border-radius: 5px;
+}
+.slide .info li.qq p a:hover{
+  color: #FFFFFF;
+  border: none;
+  background: #00E0DB;
+}
+.slide .info li div.img{
+  height: 100%;
+  background: #DEFFF9;
+  margin: 15px;
+}
+.slide .info li div.img img{
+  width: 100%;
+  height: 100%;
+}
+.index_cy{
+  width: 30px;
+  height: 30px;
+  background: url('../flot/image/index_cy.png');
+  position: fixed;
+  right: 0;
+  top: 50%;
+  margin-top: 140px;
+  background-position: 62px 0;
+  cursor: pointer;
+}
+.index_cy2{
+  width: 30px;
+  height: 30px;
+  background: url('../flot/image/index_cy.png');
+  position: fixed;
+  right: 0;
+  top: 50%;
+  margin-top: 140px;
+  background-position: 30px 0;
+  cursor: pointer;
 }
 </style>

@@ -2,7 +2,7 @@
   <div class="introduction common-box">
     <div class="w">
       <div class="title">公司简介</div>
-      <div><img src="static/images/banner-1.jpg" style="width:900px;margin-left:50px"></div>
+      <div><img src="static/images/banner/banner-1.jpg" style="width:900px;margin-left:50px"></div>
       <div class="content" v-loading="loading" v-html="content" style="line-height:30px"></div>
     </div>
   </div>
