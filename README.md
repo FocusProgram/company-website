@@ -1,8 +1,12 @@
 # 介绍
 
-> A Vue.js project
+> Reference project
 
-在线链接：[https://luckfairy.github.io/schoolWebsite](https://luckfairy.github.io/schoolWebsite/)
+[https://luckfairy.github.io/schoolWebsite](https://luckfairy.github.io/schoolWebsite/)
+
+> Official website reference
+
+[https://www.focusprogram.top/smt/#/](https://www.focusprogram.top/smt/#/)
 
 ## Build Setup
 
