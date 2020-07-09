@@ -10,7 +10,7 @@
             </div>
             <div class="intro">
               <div class="name">{{ product.name }}</div>
-              <div class="brief" v-html="product.brief"></div>
+              <div class="brief" v-html="product.brief.substring(0,80).concat('......')" style="line-height:30px"></div>
             </div>
           </a>
         </div>

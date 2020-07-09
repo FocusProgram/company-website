@@ -11,7 +11,7 @@
             <!--点-->
             <bm-marker :position="map.center" :dragging="map.dragging" animation="BMAP_ANIMATION_DROP">
                 <!--提示信息-->
-                <bm-info-window :show="map.show">恒大翡翠华庭<br/><br/>山东省济南市槐荫区兴福寺南路与滨州路交叉路口往西北约100米(恒大翡翠华庭3期南侧约150米)</bm-info-window>
+                <bm-info-window :show="map.show" style="font-weight:bolder">济南汉兴自动化科技有限公司<br/><br/>山东省济南市槐荫区兴福寺南路与滨州路交叉路口往西北约100米</bm-info-window>
             </bm-marker>
         </baidu-map>
       <img src="" alt="">
@@ -19,7 +19,7 @@
       <div class="detail">
         <span><i>公司地址：</i>山东省济南市槐荫区兴福寺南路与滨州路交叉路口往西北约100米(恒大翡翠华庭3期南侧约150米)</span><br><br>
         <span><i>咨询电话：</i>153-3530-0606</span><br><br>
-        <span><i>邮箱地址：</i>153-3530-0606@163.com</span>
+        <span><i>邮箱地址：</i>15335300606@163.com</span>
       </div>
       <div class="codes clearfix">
         <div class="code fr">
