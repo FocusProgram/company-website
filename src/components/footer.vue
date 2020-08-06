@@ -11,7 +11,7 @@
             <br>
             电话：153-3530-0606 邮箱：15335300606@163.com
             <br>
-            版权所有：Copyright@2020 济南汉兴自动化科技有限公司 | <a href="http://www.beian.miit.gov.cn" target="_blank">苏ICP备19063834号-1</a>
+            版权所有：Copyright@2020 济南汉兴自动化科技有限公司 | <a href="http://www.beian.miit.gov.cn" target="_blank"><img src="http://image.focusprogram.top/icp_beian.png" style="margin-top:-5px">&nbsp;鲁ICP备20032717号-1</a>
           </p>
         </div>
       </div>

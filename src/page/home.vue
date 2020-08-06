@@ -112,10 +112,10 @@
       </ul>
       <ul class="info">
         <li class="qq">
-          <p>在线沟通，请点我<a href="http://wpa.qq.com/msgrd?v=3&uin=1031652818&site=qq&menu=yes" target="_blank">在线咨询</a></p>
+          <p>在线沟通，请点我<a href="http://wpa.qq.com/msgrd?v=3&uin=281105594&site=qq&menu=yes" target="_blank">在线咨询</a></p>
         </li>
         <li class="tel">
-          <p>咨询热线：<br>153-3530-0606<br>客服QQ：<br>1031652818</p>
+          <p>咨询热线：<br>153-3530-0606<br>客服QQ：<br>281105594</p>
         </li>
         <li class="wx">
           <div class="img"><img src="../assets/wechat.png" /></div>
