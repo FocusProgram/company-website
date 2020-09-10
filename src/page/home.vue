@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home" style="background-color:#87CEFA">
     <div class="reason">
       <div class="top">
         <div class="line line-l"></div>汉兴科技
@@ -102,7 +102,7 @@
     </div>
   
     <!--右侧悬浮菜单-->
-    <div class="slide">
+    <div class="slide" style="background-color:#00113a;">
       <ul class="icon">
         <li class="up" title="上一页"></li>
         <li class="qq"></li>
@@ -110,7 +110,7 @@
         <li class="wx"></li>
         <li class="down" title="下一页"></li>
       </ul>
-      <ul class="info">
+      <ul class="info" style="background-color:#00113a;">
         <li class="qq">
           <p>在线沟通，请点我<a href="http://wpa.qq.com/msgrd?v=3&uin=281105594&site=qq&menu=yes" target="_blank">在线咨询</a></p>
         </li>
@@ -122,7 +122,7 @@
         </li>
       </ul>
     </div>
-    <div id="btn" class="index_cy"></div>
+    <div id="btn" class="index_cy" ></div>
   </div>
 </template>
 

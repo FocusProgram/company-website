@@ -1,14 +1,14 @@
 <template>
   <div class="header">
-    <div class="top">
+    <div class="top" style="background-color:#87CEFA;">
       <div class="logo fl" style="text-align:center;display:flex;justify-content:center;align-items:center;height:70px">
         <router-link to="/">
           <img src="@/assets/hanxing-logo.png" alt="汉兴科技" link="/" style="height:30px">
         </router-link>
       </div>
-      <div class="tel fr" style="color:#00458e;font-weight:bolder"><img src="@/assets/phone.png" style="margin-top:-5px">&nbsp;咨询热线：153-3530-0606</div>
+      <div class="tel fr" style="color:grey;font-weight:bolder"><img src="@/assets/phone.png" style="margin-top:-5px">&nbsp;咨询热线：153-3530-0606</div>
     </div>
-    <div class="menu">
+    <div class="menu" style="background-color:#f6965c">
       <div class="center">
         <router-link
           :to="item.link"
@@ -16,7 +16,7 @@
           :key="index"
           :class="{'active': activeIndex === index}"
           @click.native="changeIndex(index)"
-          style="font-weight:bolder"
+          style="font-weight:bolder;"
         >{{ item.title }}</router-link>
       </div>
     </div>
@@ -114,7 +114,7 @@ export default {
       margin: 0 11px;
       &:hover,
       &.active {
-        background-color: #133b28;
+        background-color: #00113a;
         color: #fff;
       }
     }

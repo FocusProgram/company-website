@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <div class="footer" style="background-color:#00113a;">
     <div class="w">
       <div class="info fl">
         <div class="link">
@@ -11,7 +11,7 @@
             <br>
             电话：153-3530-0606 邮箱：15335300606@163.com
             <br>
-            版权所有：Copyright@2020 济南汉兴自动化科技有限公司 | <a href="http://www.beian.miit.gov.cn" target="_blank"><img src="http://image.focusprogram.top/icp_beian.png" style="margin-top:-5px">&nbsp;鲁ICP备20032717号-1</a>
+            版权所有：Copyright@2020 济南汉兴自动化科技有限公司&nbsp;|&nbsp;<a href="http://www.beian.miit.gov.cn" style="color:#f72b07;margin-right:0px" target="_blank"><img src="static/images/beian/icp_beian.png" style="margin-top:-5px">&nbsp;鲁ICP备20032717号-1</a>| <img src="static/images/beian/gongan.png" style="margin-top:-5px"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37010402000932"  style="color:#f72b07" target="_blank">&nbsp;鲁公安网备37010402000932号</a>
           </p>
         </div>
       </div>
