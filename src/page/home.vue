@@ -187,6 +187,24 @@ export default {
           introduceUrl: './static/images/product/AOI-1-introduce-1.png,./static/images/product/AOI-1-introduce-2.png,./static/images/product/AOI-1-introduce-3.png'
         },
         {
+          avator: './static/images/product/CPM-FHse.jpg',
+          name: 'CPM-F2多功能贴片机',
+          brief: '进口X Y驱动及电机、速度更快、更稳定;先进工业飞行扫描相机实现零时差零停顿高精度元件识别;高精度热补偿系统实现实时监督贴装精度并自动修正;吸嘴自动切换实现多种类元件同时兼容。（选项）;电动进料器，保证送料更精准，解决供料不稳定，所产生的元件丢弃。中英文界面零时差一键切换 更广泛应用于国际市场。',
+          introduceUrl: './static/images/product/CPM-FHse-introduce.jpg'
+        },
+        {
+          avator: './static/images/product/LY-1000II.jpg',
+          name: 'LY-1000II十温区回流焊',
+          brief: '、增压式强制循环热风加热系统 , 温控精度土 1 ℃℃, 板面温度横向偏差土 1.5 ℃℃,室温到恒温时间小于 20 分钟。全新结构设计,强制风冷及水冷结构可升级互换; 维护保养方便快捷;领先的结构设计, 高效助焊剂收集效果, 确保炉膛内及外部环境不受助焊剂污染。防导轨变形结构设计, 运输稳定可靠。模块式结构, 便于清洁及维护。增压式强制循环热风加热系统',
+          introduceUrl: './static/images/product/LY-1000II-introduce.jpg'
+        },
+         {
+          avator: './static/images/product/LY-3050.jpg',
+          name: 'LY-3050半自动印刷机',
+          brief: '整 机采用进口PLC控制，显控触摸屏人机界面和爱得利变频及松下伺服马达控制动作，性能稳定，操作简单。全球第—家采用下脱模方式的半自动锡吾印刷机， 其印刷精度可与全自动印刷机娘美。采用导轨4条， 大大的提高了设备的稳定性能及印刷精度。采用双安全按钮开关保证作业员工作的可靠性',
+          introduceUrl: './static/images/product/LY-3050-introduce.jpg'
+        },
+        {
           avator: './static/images/product/AOI-2.png',
           name: 'A8在线AOI设备',
           brief: '随着对产品质量的要求及人工成本的不断提升，越来越多的制造商期望全自动化的制程，以此来提高效率，降低人工成本。汉兴科技研制的A8就是为了实现广大制造商这一理想，其配备多重软件分析算法，多种应用模式和各项高实用的辅助功能，除此之外，还配备高精度的运动系统。图像采集系统，使其检测速度更快，检出率更高，更稳定，以及在操作方面更为便捷。',
@@ -205,28 +223,10 @@ export default {
           introduceUrl: './static/images/product/AOI-4-introduce-1.png,./static/images/product/AOI-4-introduce-2.png,./static/images/product/AOI-4-introduce-3.png'
         },
         {
-          avator: './static/images/product/CPM-FHse.jpg',
-          name: 'CPM-F2多功能贴片机',
-          brief: '进口X Y驱动及电机、速度更快、更稳定;先进工业飞行扫描相机实现零时差零停顿高精度元件识别;高精度热补偿系统实现实时监督贴装精度并自动修正;吸嘴自动切换实现多种类元件同时兼容。（选项）;电动进料器，保证送料更精准，解决供料不稳定，所产生的元件丢弃。中英文界面零时差一键切换 更广泛应用于国际市场。',
-          introduceUrl: './static/images/product/CPM-FHse-introduce.jpg'
-        },
-        {
           avator: './static/images/product/LY-8800II.jpg',
           name: 'LY-8800II八温区回流焊',
           brief: '增压式强制循环热风加热系统 , 温控精度土 1 ℃℃, 板面温度横向偏差土 1.5 ℃℃,室温到恒温时间小于 20 分钟。全新结构设计,强制风冷及水冷结构可升级互换; 维护保养方便快捷;领先的结构设计, 高效助焊剂收集效果, 确保炉膛内及外部环境不受助焊剂污染。防导轨变形结构设计, 运输稳定可靠。模块式结构, 便于清洁及维护。增压式强制循环热风加热系统',
           introduceUrl: './static/images/product/LY-8800II-introduce.jpg'
-        },
-        {
-          avator: './static/images/product/LY-1000II.jpg',
-          name: 'LY-1000II十温区回流焊',
-          brief: '、增压式强制循环热风加热系统 , 温控精度土 1 ℃℃, 板面温度横向偏差土 1.5 ℃℃,室温到恒温时间小于 20 分钟。全新结构设计,强制风冷及水冷结构可升级互换; 维护保养方便快捷;领先的结构设计, 高效助焊剂收集效果, 确保炉膛内及外部环境不受助焊剂污染。防导轨变形结构设计, 运输稳定可靠。模块式结构, 便于清洁及维护。增压式强制循环热风加热系统',
-          introduceUrl: './static/images/product/LY-1000II-introduce.jpg'
-        },
-        {
-          avator: './static/images/product/LY-3050.jpg',
-          name: 'LY-3050半自动印刷机',
-          brief: '整 机采用进口PLC控制，显控触摸屏人机界面和爱得利变频及松下伺服马达控制动作，性能稳定，操作简单。全球第—家采用下脱模方式的半自动锡吾印刷机， 其印刷精度可与全自动印刷机娘美。采用导轨4条， 大大的提高了设备的稳定性能及印刷精度。采用双安全按钮开关保证作业员工作的可靠性',
-          introduceUrl: './static/images/product/LY-3050-introduce.jpg'
         },
         {
           avator: './static/images/product/SBJ.png',
