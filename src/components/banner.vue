@@ -9,7 +9,7 @@
       <el-carousel-item
         v-for="(item, index) in bannerLists"
         :key="index"
-        :style="`background: url(${item}) no-repeat center`"
+        :style="`background: url(${item}) repeat center`"
       ></el-carousel-item>
     </el-carousel>
   </div>
@@ -18,7 +18,7 @@
 export default {
   data () {
     return {
-      bannerLists: ['./static/images/banner/banner-5.png', './static/images/banner/banner-6.png', './static/images/banner/banner-7.png'],
+      bannerLists: ['./static/images/banner/banner-5.png', './static/images/banner/banner-6.png', './static/images/banner/banner-7.png','./static/images/banner/banner-8.jpg','./static/images/banner/banner-9.jpg'],
       indicatorStatus: 'inside'
     }
   },

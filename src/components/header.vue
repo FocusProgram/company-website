@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <div class="top" style="background-color:#87CEFA;">
+    <div class="top" style="background-color: #FFFFFF;">
       <div class="logo fl" style="text-align:center;display:flex;justify-content:center;align-items:center;height:70px">
         <router-link to="/">
           <img src="@/assets/hanxing-logo.png" alt="汉兴科技" link="/" style="height:30px">
@@ -8,7 +8,7 @@
       </div>
       <div class="tel fr" style="color:grey;font-weight:bolder"><img src="@/assets/phone.png" style="margin-top:-5px">&nbsp;咨询热线：153-3530-0606</div>
     </div>
-    <div class="menu" style="background-color:#f6965c">
+    <div class="menu" style="background-color: #103DBC">
       <div class="center">
         <router-link
           :to="item.link"
@@ -114,7 +114,7 @@ export default {
       margin: 0 11px;
       &:hover,
       &.active {
-        background-color: #00113a;
+        background-color: #0A6CB0;
         color: #fff;
       }
     }

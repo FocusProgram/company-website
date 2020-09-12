@@ -1,5 +1,5 @@
 <template>
-  <div class="home" style="background-color:#87CEFA">
+  <div class="home" style="background-color: #F4F4F4">
     <div class="reason">
       <div class="top">
         <div class="line line-l"></div>汉兴科技
@@ -203,6 +203,48 @@ export default {
           name: 'A6T全自动离线混合贴装光学检测设备',
           brief: 'HX-A6T是一款引导新领域多功能检测创新AOI，它配备独特的图像采集技术及光源系统，可检测通孔和混合贴装技术电路板，是具有色环电阻波峰焊后、SMT回流后、元件面等工艺需求的最佳选择。',
           introduceUrl: './static/images/product/AOI-4-introduce-1.png,./static/images/product/AOI-4-introduce-2.png,./static/images/product/AOI-4-introduce-3.png'
+        },
+        {
+          avator: './static/images/product/CPM-FHse.jpg',
+          name: 'CPM-F2多功能贴片机',
+          brief: '进口X Y驱动及电机、速度更快、更稳定;先进工业飞行扫描相机实现零时差零停顿高精度元件识别;高精度热补偿系统实现实时监督贴装精度并自动修正;吸嘴自动切换实现多种类元件同时兼容。（选项）;电动进料器，保证送料更精准，解决供料不稳定，所产生的元件丢弃。中英文界面零时差一键切换 更广泛应用于国际市场。',
+          introduceUrl: './static/images/product/CPM-FHse-introduce.jpg'
+        },
+        {
+          avator: './static/images/product/LY-8800II.jpg',
+          name: 'LY-8800II八温区回流焊',
+          brief: '增压式强制循环热风加热系统 , 温控精度土 1 ℃℃, 板面温度横向偏差土 1.5 ℃℃,室温到恒温时间小于 20 分钟。全新结构设计,强制风冷及水冷结构可升级互换; 维护保养方便快捷;领先的结构设计, 高效助焊剂收集效果, 确保炉膛内及外部环境不受助焊剂污染。防导轨变形结构设计, 运输稳定可靠。模块式结构, 便于清洁及维护。增压式强制循环热风加热系统',
+          introduceUrl: './static/images/product/LY-8800II-introduce.jpg'
+        },
+        {
+          avator: './static/images/product/LY-1000II.jpg',
+          name: 'LY-1000II十温区回流焊',
+          brief: '、增压式强制循环热风加热系统 , 温控精度土 1 ℃℃, 板面温度横向偏差土 1.5 ℃℃,室温到恒温时间小于 20 分钟。全新结构设计,强制风冷及水冷结构可升级互换; 维护保养方便快捷;领先的结构设计, 高效助焊剂收集效果, 确保炉膛内及外部环境不受助焊剂污染。防导轨变形结构设计, 运输稳定可靠。模块式结构, 便于清洁及维护。增压式强制循环热风加热系统',
+          introduceUrl: './static/images/product/LY-1000II-introduce.jpg'
+        },
+        {
+          avator: './static/images/product/LY-3050.jpg',
+          name: 'LY-3050半自动印刷机',
+          brief: '整 机采用进口PLC控制，显控触摸屏人机界面和爱得利变频及松下伺服马达控制动作，性能稳定，操作简单。全球第—家采用下脱模方式的半自动锡吾印刷机， 其印刷精度可与全自动印刷机娘美。采用导轨4条， 大大的提高了设备的稳定性能及印刷精度。采用双安全按钮开关保证作业员工作的可靠性',
+          introduceUrl: './static/images/product/LY-3050-introduce.jpg'
+        },
+        {
+          avator: './static/images/product/SBJ.png',
+          name: '上板机',
+          brief: '用于SMT生产线起始端，接到下位机要板信号后，从PCB料架一件一件推送出PCB板。进框轨道可存放2个料框，出框轨道可存放1个料框，升降台内可存放1个料框。升降选距为:10、20、30、40mm。',
+          introduceUrl: './static/images/product/SBJ-introduce.png'
+        },
+        {
+          avator: './static/images/product/XBJ.png',
+          name: '下板机',
+          brief: '用于SMT生产线终端，接到上位机出板信号后，一件一件接收PCB板同时把PCB板推入料框收纳好。进框轨道可存放1个料框，出框轨道可存放1个料框，升降台内可存放一个料框。升降选距为:10、20、30、40mm。',
+          introduceUrl: './static/images/product/XBJ-introduce.png'
+        },
+        {
+          avator: './static/images/product/LY-200.jpg',
+          name: 'LY-200接驳台',
+          brief: '特点：可根据客户要求定制尺寸。芯片板卡控制;导轨宽度易于调节，50 420MM;进口调速动力系统，双步进马达传输装置;可与各 SMT 机器设备自由通讯;外形尺寸： 1200*840*1680MM;传输方向：左→右（或选右→左);固定边可改',
+          introduceUrl: './static/images/product/LY-1200-introduce.jpg'
         }
       ],
       productLists: [],
